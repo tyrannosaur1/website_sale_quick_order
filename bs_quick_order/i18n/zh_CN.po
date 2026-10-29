@@ -1,0 +1,194 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* bs_quick_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20250909\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-29 05:35+0000\n"
+"PO-Revision-Date: 2026-10-29\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "%(count)s lines could not be added:"
+msgstr "有 %(count)s 行无法加入："
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "%(count)s lines were added to your cart."
+msgstr "已将 %(count)s 行加入购物车。"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "%(quantity)s is not a number."
+msgstr "%(quantity)s 不是数字。"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "1 line could not be added:"
+msgstr "有 1 行无法加入："
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "1 line was added to your cart."
+msgstr "已将 1 行加入购物车。"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.header_quick_order_link
+msgid "<span>Quick order</span>"
+msgstr "<span>快速下单</span>"
+
+#. module: bs_quick_order
+#: model:ir.module.module,summary:base.module_bs_quick_order
+msgid "A B2B bulk order page: paste a list of product references and quantities, and the shop adds every line it can to the cart and names the lines it cannot."
+msgstr "B2B 批量下单页：粘贴产品参考号与数量清单，商店会把能处理的每一行加入购物车，并说明无法处理的那些行。"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Add to cart"
+msgstr "加入购物车"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Back to the cart"
+msgstr "返回购物车"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Line"
+msgstr "行"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "No product matches this reference."
+msgstr "没有与此参考号匹配的产品。"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "No quantity on this line: write the reference, a space, then the quantity."
+msgstr "此行缺少数量：请写参考号，空格，然后写数量。"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "Nothing was added to your cart."
+msgstr "购物车中未添加任何商品。"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid ""
+"One product per line: the reference, then the quantity.\n"
+"                        A reference is the internal reference of the product or\n"
+"                        its barcode. Separate the two with a space, a tab, a\n"
+"                        semicolon or a comma, and repeat a reference to add its\n"
+"                        quantities together."
+msgstr "每行一个产品：先是参考号，再是数量。参考号可以是产品的内部参考号或条码。两者之间用空格、制表符、分号或逗号分隔；重复同一个参考号，数量会累加。"
+
+#. module: bs_quick_order
+#: model:ir.model,name:bs_quick_order.model_product_product
+msgid "Product Variant"
+msgstr "产品变体"
+
+#. module: bs_quick_order
+#: model:ir.module.module,shortdesc:base.module_bs_quick_order
+msgid "Quick Order by Reference"
+msgstr "按参考号快速下单"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Quick order"
+msgstr "快速下单"
+
+#. module: bs_quick_order
+#: model:ir.model,name:bs_quick_order.model_sale_order
+msgid "Sales Order"
+msgstr "销售订单"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "Several products share this reference: add this one from its product page."
+msgstr "多个产品共用此参考号：请在该产品的页面上添加。"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "The list is limited to %(max)s lines; %(count)s were pasted."
+msgstr "清单最多 %(max)s 行；您粘贴了 %(count)s 行。"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "The quantity must be greater than zero."
+msgstr "数量必须大于零。"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "The shop refused this line."
+msgstr "商店拒绝了此行。"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "This line could not be added."
+msgstr "此行无法加入。"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "This product is not for sale on the website."
+msgstr "该产品不在网站上销售。"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "This product is not part of the current pricelist."
+msgstr "该产品不在当前价格表中。"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "This product is not published on the website."
+msgstr "该产品未在网站上发布。"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Up to"
+msgstr "每次最多"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid ""
+"WIDGET-01\n"
+"BOX-6    6\n"
+"SKU_42; 12"
+msgstr ""
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Your lines"
+msgstr "您的清单"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid ""
+"lines per submission.\n"
+"                            Lines that cannot be read are listed after the form;\n"
+"                            the others still go to the cart."
+msgstr "行。无法识别的行会列在表单下方，其余各行仍会加入购物车。"
