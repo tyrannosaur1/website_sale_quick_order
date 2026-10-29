@@ -23,7 +23,7 @@ from ..models.quick_order import (
     parse_order_text,
 )
 
-TEMPLATE = "website_sale_quick_order.quick_order_page"
+TEMPLATE = "bs_quick_order.quick_order_page"
 
 
 class WebsiteSaleQuickOrder(http.Controller):
