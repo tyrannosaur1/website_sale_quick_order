@@ -1,0 +1,51 @@
+<div style="max-width:880px;margin:0 auto;padding:8px 4px 24px;color:#2b2b2b;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;line-height:1.65">
+<div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#017E84;font-weight:600">Odoo &#183; Website / eCommerce</div>
+<div style="font-size:38px;line-height:1.2;margin:10px 0 14px;font-weight:700">Quick Order by Reference</div>
+<div style="font-size:18px;color:#6b6b6b;margin:0 0 20px;max-width:660px">A business customer who reorders the same twenty articles every month should not have to find twenty product pages. Paste the list, keep the references you already use, and let the shop fill the cart.</div>
+
+<div style="margin:0 0 4px"><span style="display:inline-block;font-size:12.5px;padding:5px 12px;border-radius:999px;background:#faf7f8;border:1px solid #e7e3e5;color:#524a4f;margin:0 8px 8px 0;white-space:nowrap">website_sale only</span><span style="display:inline-block;font-size:12.5px;padding:5px 12px;border-radius:999px;background:#faf7f8;border:1px solid #e7e3e5;color:#524a4f;margin:0 8px 8px 0;white-space:nowrap">Signed-in customers</span><span style="display:inline-block;font-size:12.5px;padding:5px 12px;border-radius:999px;background:#faf7f8;border:1px solid #e7e3e5;color:#524a4f;margin:0 8px 8px 0;white-space:nowrap">OPL-1</span></div>
+
+<div style="display:flex;flex-wrap:wrap;gap:16px;margin:36px 0 8px">
+<div style="flex:1 1 220px;min-width:200px;border:1px solid #e7e3e5;border-radius:10px;padding:20px;background:#fff"><div style="font-size:15px;font-weight:600;margin:0 0 6px">One line, one article</div><div style="font-size:13.5px;color:#6b6b6b">The reference and the quantity, separated by a space, a tab, a semicolon or a comma. Whatever the spreadsheet column already looks like, it pastes.</div></div>
+<div style="flex:1 1 220px;min-width:200px;border:1px solid #e7e3e5;border-radius:10px;padding:20px;background:#fff"><div style="font-size:15px;font-weight:600;margin:0 0 6px">A typo costs one line</div><div style="font-size:13.5px;color:#6b6b6b">A reference that cannot be read is listed with its line number; the lines around it still reach the cart. Nobody retypes an order because of one character.</div></div>
+<div style="flex:1 1 220px;min-width:200px;border:1px solid #e7e3e5;border-radius:10px;padding:20px;background:#fff"><div style="font-size:15px;font-weight:600;margin:0 0 6px">The shop decides, not the page</div><div style="font-size:13.5px;color:#6b6b6b">Prices, publication, pricelist and stock are the shop's own rules. The page adds lines through the same door the product page uses, so the two cannot disagree.</div></div>
+</div>
+
+<div style="font-size:22px;font-weight:700;margin:52px 0 4px">How a list is written</div>
+<div style="font-size:14px;color:#3f3f3f;margin-top:10px">One product per line. The quantity is the last number on the line and everything before it is the reference, so a reference that contains spaces works as it is written on the invoice.</div>
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-top:10px"><tbody>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">What is typed</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;font-family:monospace;font-size:13px">WIDGET-01 2<br>BOX-6&nbsp;&nbsp;&nbsp;&nbsp;6<br>SKU_42; 12<br>NUTS,0.25</td></tr>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">What it means</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">Four lines, four articles. Blank lines are ignored and do not shift the numbering the answer quotes back.</td></tr>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">The same reference twice</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">Summed, not duplicated: two lines of <em>WIDGET-01</em> become one line of the cart with the total. The merge ignores case.</td></tr>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">Which reference</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">The product's internal reference first, its barcode second. Two products sharing a reference is an ambiguity, and an ambiguity is reported rather than guessed.</td></tr>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">The cap</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">A hundred lines per submission. Past that the list is refused whole, before anything is looked up.</td></tr>
+</tbody></table>
+
+<div style="font-size:22px;font-weight:700;margin:52px 0 4px">What the customer sees</div>
+<div style="display:flex;flex-wrap:wrap;gap:0 28px;margin-top:6px">
+<div style="flex:1 1 300px;min-width:260px;font-size:14px;padding:8px 0"><span style="color:#017E84;font-weight:700;margin-right:9px">&#10003;</span>A menu entry in the shop header, next to the cart, for every signed-in visitor</div>
+<div style="flex:1 1 300px;min-width:260px;font-size:14px;padding:8px 0"><span style="color:#017E84;font-weight:700;margin-right:9px">&#10003;</span>A visitor who is not signed in is sent to the login page and comes back to the same page afterwards</div>
+<div style="flex:1 1 300px;min-width:260px;font-size:14px;padding:8px 0"><span style="color:#017E84;font-weight:700;margin-right:9px">&#10003;</span>A summary that says how many lines were added, and what each refused line said</div>
+<div style="flex:1 1 300px;min-width:260px;font-size:14px;padding:8px 0"><span style="color:#017E84;font-weight:700;margin-right:9px">&#10003;</span>The text the customer typed stays in the textarea, so a corrected line is one edit away</div>
+<div style="flex:1 1 300px;min-width:260px;font-size:14px;padding:8px 0"><span style="color:#017E84;font-weight:700;margin-right:9px">&#10003;</span>A link back to the cart, and the cart's own quantity badge kept up to date</div>
+</div>
+
+<div style="font-size:22px;font-weight:700;margin:48px 0 4px">The edges, stated plainly</div>
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin-top:10px"><tbody>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">Not published</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">A product hidden from the website is a line error, not a silent add. Archived and not-for-sale products are refused the same way, with their own sentence.</td></tr>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">Pricelists</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">A pricelist that names products -- a product, a variant or a category rule -- sells those products; a global rule adds the rest of the catalogue. A pricelist that names nothing is a general one and sells everything.</td></tr>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">Stock</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">Whatever the shop does when a product is out of stock, this page does too: it adds through the shop's own path and turns a refusal into a line error instead of forcing the line in.</td></tr>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">Quantities</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">Positive numbers only. Zero, a negative number, a word or a line with no quantity at all is reported on its own line.</td></tr>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">The form</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">Posts back to the shop with its CSRF token, like every other form of the site. There is no JSON endpoint to call without one.</td></tr>
+</tbody></table>
+
+<div style="font-size:22px;font-weight:700;margin:48px 0 4px">Technical details</div>
+<table style="width:100%;border-collapse:collapse;font-size:14px"><tbody>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">Depends on</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">website_sale</td></tr>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">License</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">OPL-1</td></tr>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">Odoo versions</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">10.0 to 20.0, one branch per series -- this branch is 10.0</td></tr>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">Where it lives</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">/shop/quick-order, linked from the header of every page of the shop</td></tr>
+<tr><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5;background:#faf7f8;font-weight:600;color:#524a4f;width:34%">Install</td><td style="padding:10px 12px;border-bottom:1px solid #e7e3e5">Apps &#8594; Update Apps List &#8594; search &#8220;Quick Order&#8221; &#8594; Install</td></tr>
+</tbody></table>
+<div style="border-top:1px solid #e7e3e5;margin-top:44px;padding-top:14px;font-size:12.5px;color:#8a8189">bs_quick_order &#183; ModForge</div>
+</div>
