@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* website_sale_quick_order
+#	* bs_quick_order
 #
 msgid ""
 msgstr ""
@@ -16,81 +16,81 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "%(count)s lines could not be added:"
 msgstr "%(count)s lignes n'ont pas pu être ajoutées :"
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "%(count)s lines were added to your cart."
 msgstr "%(count)s lignes ont été ajoutées à votre panier."
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "%(quantity)s is not a number."
 msgstr "%(quantity)s n'est pas un nombre."
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "1 line could not be added:"
 msgstr "1 ligne n'a pas pu être ajoutée :"
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "1 line was added to your cart."
 msgstr "1 ligne a été ajoutée à votre panier."
 
-#. module: website_sale_quick_order
-#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.header_quick_order_link
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.header_quick_order_link
 msgid "<span>Quick order</span>"
 msgstr "<span>Commande rapide</span>"
 
-#. module: website_sale_quick_order
-#: model:ir.module.module,summary:base.module_website_sale_quick_order
+#. module: bs_quick_order
+#: model:ir.module.module,summary:base.module_bs_quick_order
 msgid "A B2B bulk order page: paste a list of product references and quantities, and the shop adds every line it can to the cart and names the lines it cannot."
 msgstr "Une page de commande en volume B2B : collez une liste de références et de quantités, et la boutique ajoute au panier toutes les lignes possibles et nomme celles qui ne le sont pas."
 
-#. module: website_sale_quick_order
-#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
 msgid "Add to cart"
 msgstr "Ajouter au panier"
 
-#. module: website_sale_quick_order
-#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
 msgid "Back to the cart"
 msgstr "Retour au panier"
 
-#. module: website_sale_quick_order
-#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
 msgid "Line"
 msgstr "Linéaire"
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "No product matches this reference."
 msgstr "Aucun produit ne correspond à cette référence."
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "No quantity on this line: write the reference, a space, then the quantity."
 msgstr "Aucune quantité sur cette ligne : écrivez la référence, un espace, puis la quantité."
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "Nothing was added to your cart."
 msgstr "Rien n'a été ajouté à votre panier."
 
-#. module: website_sale_quick_order
-#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
 msgid ""
 "One product per line: the reference, then the quantity.\n"
 "                        A reference is the internal reference of the product or\n"
@@ -99,94 +99,94 @@ msgid ""
 "                        quantities together."
 msgstr "Un produit par ligne : la référence, puis la quantité. Une référence est la référence interne du produit ou son code-barres. Séparez les deux par un espace, une tabulation, un point-virgule ou une virgule, et répétez une référence pour additionner ses quantités."
 
-#. module: website_sale_quick_order
-#: model:ir.model,name:website_sale_quick_order.model_product_product
+#. module: bs_quick_order
+#: model:ir.model,name:bs_quick_order.model_product_product
 msgid "Product Variant"
 msgstr "Variante de produit"
 
-#. module: website_sale_quick_order
-#: model:ir.module.module,shortdesc:base.module_website_sale_quick_order
+#. module: bs_quick_order
+#: model:ir.module.module,shortdesc:base.module_bs_quick_order
 msgid "Quick Order by Reference"
 msgstr "Commande rapide par référence"
 
-#. module: website_sale_quick_order
-#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
 msgid "Quick order"
 msgstr "Commande rapide"
 
-#. module: website_sale_quick_order
-#: model:ir.model,name:website_sale_quick_order.model_sale_order
+#. module: bs_quick_order
+#: model:ir.model,name:bs_quick_order.model_sale_order
 msgid "Sales Order"
 msgstr "Commande client"
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "Several products share this reference: add this one from its product page."
 msgstr "Plusieurs produits partagent cette référence : ajoutez celui-ci depuis sa fiche produit."
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "The list is limited to %(max)s lines; %(count)s were pasted."
 msgstr "La liste est limitée à %(max)s lignes ; %(count)s ont été collées."
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "The quantity must be greater than zero."
 msgstr "La quantité doit être supérieure à zéro."
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "The shop refused this line."
 msgstr "La boutique a refusé cette ligne."
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "This line could not be added."
 msgstr "Cette ligne n'a pas pu être ajoutée."
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "This product is not for sale on the website."
 msgstr "Ce produit n'est pas en vente sur le site web."
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "This product is not part of the current pricelist."
 msgstr "Ce produit ne fait pas partie de la liste de prix actuelle."
 
-#. module: website_sale_quick_order
+#. module: bs_quick_order
 #. odoo-python
-#: code:addons/website_sale_quick_order/models/quick_order.py:0
+#: code:addons/bs_quick_order/models/quick_order.py:0
 msgid "This product is not published on the website."
 msgstr "Ce produit n'est pas publié sur le site web."
 
-#. module: website_sale_quick_order
-#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
 msgid "Up to"
 msgstr "Jusqu'à"
 
-#. module: website_sale_quick_order
-#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
 msgid ""
 "WIDGET-01\n"
 "BOX-6    6\n"
 "SKU_42; 12"
 msgstr ""
 
-#. module: website_sale_quick_order
-#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
 msgid "Your lines"
 msgstr "Vos lignes"
 
-#. module: website_sale_quick_order
-#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
 msgid ""
 "lines per submission.\n"
 "                            Lines that cannot be read are listed after the form;\n"

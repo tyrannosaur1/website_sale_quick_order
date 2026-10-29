@@ -8,7 +8,7 @@ tests need no product, no website and no cart.
 """
 from odoo.tests.common import TransactionCase
 
-from odoo.addons.website_sale_quick_order.models.quick_order import (
+from odoo.addons.bs_quick_order.models.quick_order import (
     INVALID_QUANTITY,
     MAX_LINES,
     MISSING_QUANTITY,

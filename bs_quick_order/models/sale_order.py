@@ -22,7 +22,7 @@ class SaleOrder(models.Model):
         """Add every usable row to this cart.
 
         :param list rows: the parsed rows, see
-            :func:`odoo.addons.website_sale_quick_order.models.quick_order.parse_order_text`
+            :func:`odoo.addons.bs_quick_order.models.quick_order.parse_order_text`
         :param pricelist: the pricelist the cart is being priced with
         :return: ``(added, errors)`` -- the rows that reached the cart and the
             rows that did not, each carrying the ``code`` that says why

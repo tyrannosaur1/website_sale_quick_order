@@ -9,7 +9,7 @@ and the customer reads a different sentence for each.
 """
 from odoo.tests.common import TransactionCase
 
-from odoo.addons.website_sale_quick_order.models.quick_order import (
+from odoo.addons.bs_quick_order.models.quick_order import (
     AMBIGUOUS_REFERENCE,
     NOT_FOR_SALE,
     NOT_IN_PRICELIST,
