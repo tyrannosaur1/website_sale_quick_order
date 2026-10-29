@@ -1,0 +1,206 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* website_sale_quick_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-29 05:37+0000\n"
+"PO-Revision-Date: 2026-10-29\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "%(count)s lines could not be added:"
+msgstr "%(count)s regels konden niet worden toegevoegd:"
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "%(count)s lines were added to your cart."
+msgstr "%(count)s regels zijn toegevoegd aan uw winkelmandje."
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "%(quantity)s is not a number."
+msgstr "%(quantity)s is geen getal."
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "1 line could not be added:"
+msgstr "1 regel kon niet worden toegevoegd:"
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "1 line was added to your cart."
+msgstr "1 regel is toegevoegd aan uw winkelmandje."
+
+#. module: website_sale_quick_order
+#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.header_quick_order_link
+msgid "<span>Quick order</span>"
+msgstr "<span>Snel bestellen</span>"
+
+#. module: website_sale_quick_order
+#: model:ir.module.module,summary:base.module_website_sale_quick_order
+msgid "A B2B bulk order page: paste a list of product references and quantities, and the shop adds every line it can to the cart and names the lines it cannot."
+msgstr "Een B2B-bestelpagina voor grote aantallen: plak een lijst met productreferenties en hoeveelheden, en de winkel zet elke mogelijke regel in het winkelmandje en benoemt de onmogelijke."
+
+#. module: website_sale_quick_order
+#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+msgid "Add to cart"
+msgstr "Toevoegen aan winkelmandje"
+
+#. module: website_sale_quick_order
+#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+msgid "Back to the cart"
+msgstr "Terug naar winkelmandje"
+
+#. module: website_sale_quick_order
+#: model:ir.model.fields,field_description:website_sale_quick_order.field_product_product__display_name
+#: model:ir.model.fields,field_description:website_sale_quick_order.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: website_sale_quick_order
+#: model:ir.model.fields,field_description:website_sale_quick_order.field_product_product__id
+#: model:ir.model.fields,field_description:website_sale_quick_order.field_sale_order__id
+msgid "ID"
+msgstr "ID"
+
+#. module: website_sale_quick_order
+#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+msgid "Line"
+msgstr "Regel"
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "No product matches this reference."
+msgstr "Geen enkel product komt overeen met deze referentie."
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "No quantity on this line: write the reference, a space, then the quantity."
+msgstr "Geen hoeveelheid op deze regel: schrijf de referentie, een spatie en dan de hoeveelheid."
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "Nothing was added to your cart."
+msgstr "Er is niets aan uw winkelmandje toegevoegd."
+
+#. module: website_sale_quick_order
+#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+msgid ""
+"One product per line: the reference, then the quantity.\n"
+"                        A reference is the internal reference of the product or\n"
+"                        its barcode. Separate the two with a space, a tab, a\n"
+"                        semicolon or a comma, and repeat a reference to add its\n"
+"                        quantities together."
+msgstr "Eén product per regel: eerst de referentie, dan de hoeveelheid. Een referentie is de interne referentie van het product of de streepjescode ervan. Scheid beide met een spatie, een tab, een puntkomma of een komma, en herhaal een referentie om de hoeveelheden op te tellen."
+
+#. module: website_sale_quick_order
+#: model:ir.model,name:website_sale_quick_order.model_product_product
+msgid "Product Variant"
+msgstr "Productvariant"
+
+#. module: website_sale_quick_order
+#: model:ir.module.module,shortdesc:base.module_website_sale_quick_order
+msgid "Quick Order by Reference"
+msgstr "Snel bestellen op referentie"
+
+#. module: website_sale_quick_order
+#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+msgid "Quick order"
+msgstr "Snel bestellen"
+
+#. module: website_sale_quick_order
+#: model:ir.model,name:website_sale_quick_order.model_sale_order
+msgid "Sales Order"
+msgstr "Verkooporder"
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "Several products share this reference: add this one from its product page."
+msgstr "Meerdere producten delen deze referentie: voeg dit product toe via de productpagina."
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "The list is limited to %(max)s lines; %(count)s were pasted."
+msgstr "De lijst is beperkt tot %(max)s regels; er zijn %(count)s geplakt."
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "The quantity must be greater than zero."
+msgstr "De hoeveelheid moet groter zijn dan nul."
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "The shop refused this line."
+msgstr "De winkel heeft deze regel geweigerd."
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "This line could not be added."
+msgstr "Deze regel kon niet worden toegevoegd."
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "This product is not for sale on the website."
+msgstr "Dit product is niet te koop op de website."
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "This product is not part of the current pricelist."
+msgstr "Dit product maakt geen deel uit van de huidige prijslijst."
+
+#. module: website_sale_quick_order
+#. odoo-python
+#: code:addons/website_sale_quick_order/models/quick_order.py:0
+msgid "This product is not published on the website."
+msgstr "Dit product is niet gepubliceerd op de website."
+
+#. module: website_sale_quick_order
+#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+msgid "Up to"
+msgstr "Maximaal"
+
+#. module: website_sale_quick_order
+#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+msgid ""
+"WIDGET-01\n"
+"BOX-6    6\n"
+"SKU_42; 12"
+msgstr ""
+
+#. module: website_sale_quick_order
+#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+msgid "Your lines"
+msgstr "Uw regels"
+
+#. module: website_sale_quick_order
+#: model_terms:ir.ui.view,arch_db:website_sale_quick_order.quick_order_page
+msgid ""
+"lines per submission.\n"
+"                            Lines that cannot be read are listed after the form;\n"
+"                            the others still go to the cart."
+msgstr "regels per inzending. Regels die niet gelezen kunnen worden, staan onder het formulier; de overige gaan toch naar het winkelmandje."
