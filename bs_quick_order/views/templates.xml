@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- A way in from the shop header, next to the cart. 12.0 has no
+         ``header_cart_link`` template yet: the cart link is a <li> in
+         ``website_sale.header`` with the id ``my_cart``, which is what this
+         view anchors on. -->
+    <template id="header_quick_order_link" name="Quick order link"
+              inherit_id="website_sale.header">
+        <xpath expr="//li[@id='my_cart']" position="after">
+            <li class="nav-item o_wsqo_header_link">
+                <a href="/shop/quick-order" class="nav-link">
+                    <span>Quick order</span>
+                </a>
+            </li>
+        </xpath>
+    </template>
+
+    <!-- The page. The form posts back to its own URL and the answer is
+         rendered in the same response, so the list of what failed is next to
+         the text the customer pasted, with the line numbers unchanged. -->
+    <template id="quick_order_page" name="Quick order">
+        <t t-call="website.layout">
+            <div id="wrap" class="o_wsqo_page">
+                <div class="container py-4" style="max-width: 900px">
+                    <h1 class="mb-2">Quick order</h1>
+                    <p class="text-muted mb-4">
+                        One product per line: the reference, then the quantity.
+                        A reference is the internal reference of the product or
+                        its barcode. Separate the two with a space, a tab, a
+                        semicolon or a comma, and repeat a reference to add its
+                        quantities together.
+                    </p>
+
+                    <div class="alert alert-danger" t-if="error" id="o_wsqo_error"
+                         t-esc="error"/>
+
+                    <t t-if="result">
+                        <div class="alert alert-success" t-if="result['added']"
+                             id="o_wsqo_added">
+                            <div style="font-weight:600" t-esc="result['added_label']"/>
+                            <ul class="mb-0 mt-2">
+                                <li t-foreach="result['added']" t-as="entry">
+                                    <span>Line <t t-esc="entry['line']"/></span>
+                                    <span> &#8212; <t t-esc="entry['product'].display_name"/></span>
+                                    <span> &#215; <t t-esc="entry['quantity_label']"/></span>
+                                    <span class="text-muted" t-if="entry['warning']"
+                                          t-esc="entry['warning']"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="alert alert-warning" t-if="not result['added']"
+                             id="o_wsqo_nothing" t-esc="result['nothing_label']"/>
+                        <div class="alert alert-warning" t-if="result['errors']"
+                             id="o_wsqo_errors">
+                            <div style="font-weight:600" t-esc="result['error_label']"/>
+                            <ul class="mb-0 mt-2">
+                                <li t-foreach="result['errors']" t-as="entry">
+                                    <span>Line <t t-esc="entry['line']"/></span>
+                                    <span> &#8212; <strong t-esc="entry['reference']"/></span>
+                                    <span>: <t t-esc="entry['message']"/></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </t>
+
+                    <form t-att-action="form_action" method="post" id="o_wsqo_form">
+                        <input type="hidden" name="csrf_token"
+                               t-att-value="request.csrf_token()"/>
+                        <div class="mb-2">
+                            <label for="o_wsqo_lines" style="font-weight:600">
+                                Your lines
+                            </label>
+                        </div>
+                        <textarea id="o_wsqo_lines" name="lines" rows="12"
+                                  class="form-control" style="font-family: monospace"
+                                  t-esc="lines"
+                                  placeholder="WIDGET-01&#10;BOX-6    6&#10;SKU_42; 12"/>
+                        <div class="text-muted small mt-2" id="o_wsqo_help">
+                            Up to <t t-esc="max_lines"/> lines per submission.
+                            Lines that cannot be read are listed after the form;
+                            the others still go to the cart.
+                        </div>
+                        <div class="mt-3">
+                            <button type="submit" class="btn btn-primary"
+                                    id="o_wsqo_submit">Add to cart</button>
+                            <a href="/shop/cart" class="btn btn-outline-secondary"
+                               id="o_wsqo_cart_link">Back to the cart</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>
