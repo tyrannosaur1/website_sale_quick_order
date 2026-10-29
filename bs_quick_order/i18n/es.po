@@ -1,0 +1,194 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* bs_quick_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20250909\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-29 05:35+0000\n"
+"PO-Revision-Date: 2026-10-29\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "%(count)s lines could not be added:"
+msgstr "%(count)s líneas no se han podido añadir:"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "%(count)s lines were added to your cart."
+msgstr "Se han añadido %(count)s líneas a su carrito."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "%(quantity)s is not a number."
+msgstr "%(quantity)s no es un número."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "1 line could not be added:"
+msgstr "1 línea no se ha podido añadir:"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "1 line was added to your cart."
+msgstr "Se ha añadido 1 línea a su carrito."
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.header_quick_order_link
+msgid "<span>Quick order</span>"
+msgstr "<span>Pedido rápido</span>"
+
+#. module: bs_quick_order
+#: model:ir.module.module,summary:base.module_bs_quick_order
+msgid "A B2B bulk order page: paste a list of product references and quantities, and the shop adds every line it can to the cart and names the lines it cannot."
+msgstr "Una página de pedidos por volumen B2B: pegue una lista de referencias y cantidades y la tienda añadirá al carrito todas las líneas que pueda e indicará las que no pueda."
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Add to cart"
+msgstr "Añadir a la cesta"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Back to the cart"
+msgstr "Volver al carrito"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Line"
+msgstr "Línea"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "No product matches this reference."
+msgstr "Ningún producto coincide con esta referencia."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "No quantity on this line: write the reference, a space, then the quantity."
+msgstr "Esta línea no tiene cantidad: escriba la referencia, un espacio y la cantidad."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "Nothing was added to your cart."
+msgstr "No se ha añadido nada a su carrito."
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid ""
+"One product per line: the reference, then the quantity.\n"
+"                        A reference is the internal reference of the product or\n"
+"                        its barcode. Separate the two with a space, a tab, a\n"
+"                        semicolon or a comma, and repeat a reference to add its\n"
+"                        quantities together."
+msgstr "Un producto por línea: la referencia y luego la cantidad. La referencia es la referencia interna del producto o su código de barras. Separe ambos con un espacio, un tabulador, un punto y coma o una coma, y repita una referencia para sumar sus cantidades."
+
+#. module: bs_quick_order
+#: model:ir.model,name:bs_quick_order.model_product_product
+msgid "Product Variant"
+msgstr "Variante de producto"
+
+#. module: bs_quick_order
+#: model:ir.module.module,shortdesc:base.module_bs_quick_order
+msgid "Quick Order by Reference"
+msgstr "Pedido rápido por referencia"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Quick order"
+msgstr "Pedido rápido"
+
+#. module: bs_quick_order
+#: model:ir.model,name:bs_quick_order.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "Several products share this reference: add this one from its product page."
+msgstr "Varios productos comparten esta referencia: añada este desde su ficha de producto."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "The list is limited to %(max)s lines; %(count)s were pasted."
+msgstr "La lista se limita a %(max)s líneas; se pegaron %(count)s."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "The quantity must be greater than zero."
+msgstr "La cantidad debe ser mayor que cero."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "The shop refused this line."
+msgstr "La tienda ha rechazado esta línea."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "This line could not be added."
+msgstr "No se ha podido añadir esta línea."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "This product is not for sale on the website."
+msgstr "Este producto no está a la venta en el sitio web."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "This product is not part of the current pricelist."
+msgstr "Este producto no forma parte de la lista de precios actual."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "This product is not published on the website."
+msgstr "Este producto no está publicado en el sitio web."
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Up to"
+msgstr "Hasta"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid ""
+"WIDGET-01\n"
+"BOX-6    6\n"
+"SKU_42; 12"
+msgstr ""
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Your lines"
+msgstr "Sus líneas"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid ""
+"lines per submission.\n"
+"                            Lines that cannot be read are listed after the form;\n"
+"                            the others still go to the cart."
+msgstr "líneas por envío. Las líneas que no se pueden leer se listan después del formulario; las demás sí se añaden al carrito."

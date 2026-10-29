@@ -1,0 +1,194 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* bs_quick_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20250909\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-29 05:35+0000\n"
+"PO-Revision-Date: 2026-10-29\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "%(count)s lines could not be added:"
+msgstr "Не удалось добавить строк: %(count)s."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "%(count)s lines were added to your cart."
+msgstr "В корзину добавлено строк: %(count)s."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "%(quantity)s is not a number."
+msgstr "%(quantity)s не является числом."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "1 line could not be added:"
+msgstr "Не удалось добавить 1 строку:"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "1 line was added to your cart."
+msgstr "В корзину добавлена 1 строка."
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.header_quick_order_link
+msgid "<span>Quick order</span>"
+msgstr "<span>Быстрый заказ</span>"
+
+#. module: bs_quick_order
+#: model:ir.module.module,summary:base.module_bs_quick_order
+msgid "A B2B bulk order page: paste a list of product references and quantities, and the shop adds every line it can to the cart and names the lines it cannot."
+msgstr "Страница оптового заказа B2B: вставьте список артикулов и количеств, и магазин добавит в корзину все возможные строки и укажет невозможные."
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Add to cart"
+msgstr "Добавить в корзину"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Back to the cart"
+msgstr "Вернуться в корзину"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Line"
+msgstr "Строка"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "No product matches this reference."
+msgstr "Ни один товар не соответствует этому артикулу."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "No quantity on this line: write the reference, a space, then the quantity."
+msgstr "В строке нет количества: напишите артикул, пробел, затем количество."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "Nothing was added to your cart."
+msgstr "В корзину ничего не добавлено."
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid ""
+"One product per line: the reference, then the quantity.\n"
+"                        A reference is the internal reference of the product or\n"
+"                        its barcode. Separate the two with a space, a tab, a\n"
+"                        semicolon or a comma, and repeat a reference to add its\n"
+"                        quantities together."
+msgstr "Один товар в строке: сначала артикул, затем количество. Артикул — это внутренняя ссылка товара или его штрихкод. Разделите их пробелом, табуляцией, точкой с запятой или запятой; повтор артикула суммирует количества."
+
+#. module: bs_quick_order
+#: model:ir.model,name:bs_quick_order.model_product_product
+msgid "Product Variant"
+msgstr "Вариант продукта"
+
+#. module: bs_quick_order
+#: model:ir.module.module,shortdesc:base.module_bs_quick_order
+msgid "Quick Order by Reference"
+msgstr "Быстрый заказ по артикулу"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Quick order"
+msgstr "Быстрый заказ"
+
+#. module: bs_quick_order
+#: model:ir.model,name:bs_quick_order.model_sale_order
+msgid "Sales Order"
+msgstr "Заказ на продажу"
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "Several products share this reference: add this one from its product page."
+msgstr "Несколько товаров имеют этот артикул: добавьте нужный со страницы товара."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "The list is limited to %(max)s lines; %(count)s were pasted."
+msgstr "Список ограничен %(max)s строками; вставлено %(count)s."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "The quantity must be greater than zero."
+msgstr "Количество должно быть больше нуля."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "The shop refused this line."
+msgstr "Магазин отклонил эту строку."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "This line could not be added."
+msgstr "Эту строку не удалось добавить."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "This product is not for sale on the website."
+msgstr "Этот товар не продаётся на сайте."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "This product is not part of the current pricelist."
+msgstr "Этот товар не входит в текущий прайс-лист."
+
+#. module: bs_quick_order
+#. odoo-python
+#: code:addons/bs_quick_order/models/quick_order.py:0
+msgid "This product is not published on the website."
+msgstr "Этот товар не опубликован на сайте."
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Up to"
+msgstr "До"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid ""
+"WIDGET-01\n"
+"BOX-6    6\n"
+"SKU_42; 12"
+msgstr ""
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid "Your lines"
+msgstr "Ваши строки"
+
+#. module: bs_quick_order
+#: model_terms:ir.ui.view,arch_db:bs_quick_order.quick_order_page
+msgid ""
+"lines per submission.\n"
+"                            Lines that cannot be read are listed after the form;\n"
+"                            the others still go to the cart."
+msgstr "строк за отправку. Нечитаемые строки перечисляются под формой, остальные всё равно попадают в корзину."
