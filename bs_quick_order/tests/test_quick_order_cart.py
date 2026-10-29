@@ -12,7 +12,7 @@ from unittest.mock import patch
 from odoo.exceptions import UserError
 from odoo.tests.common import TransactionCase
 
-from odoo.addons.website_sale_quick_order.models.quick_order import (
+from odoo.addons.bs_quick_order.models.quick_order import (
     NOT_PUBLISHED,
     SHOP_REFUSED,
     UNKNOWN_REFERENCE,
