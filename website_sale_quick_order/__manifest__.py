@@ -6,6 +6,8 @@
                "quantities, and the shop adds every line it can to the cart and "
                "names the lines it cannot.",
     "author": "ModForge",
+        "images": ["static/description/screenshot_1.png",
+        "static/description/screenshot_2.png",],
     "license": "OPL-1",
     "category": "Website/Website",
     "depends": ["website_sale"],
