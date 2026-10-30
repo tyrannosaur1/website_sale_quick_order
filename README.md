@@ -2,7 +2,7 @@
 
 Paste a list of product references and quantities; the shop adds every line it can and names the lines it cannot.
 
-Odoo 16.0 – 20.0. One branch per series, the branch name is the series.
+Odoo 10.0 – 20.0. One branch per series, the branch name is the series.
 
 ## What it does
 
