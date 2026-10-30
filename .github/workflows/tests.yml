@@ -137,7 +137,14 @@ jobs:
 
       - name: Fail when a test failed
         # Odoo exits 0 even when tests fail, so the log is the only witness.
+        # A run that collected nothing is a failure too: a job that installs a
+        # module and runs no test looks exactly like a passing one.
         run: |
+          grep -E "tests when loading|Ran [0-9]+ tests|failed, " odoo.log || true
+          if ! grep -qE "Ran [0-9]+ tests|tests when loading" odoo.log; then
+            echo "no test was collected -- the module name or the test tags are wrong"
+            exit 1
+          fi
           if grep -qE "FAIL:|FAILED|[1-9][0-9]* failed," odoo.log; then
             echo "at least one test failed"
             exit 1
